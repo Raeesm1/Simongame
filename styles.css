@@ -1,0 +1,180 @@
+*{
+    background-color: navy;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.intro{
+    color: rgb(240, 240, 132);
+    font-size: 30px;
+    text-align: center;
+}
+
+.introContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.playBtnContainer{
+    transform: translate(90%, 130%);
+    height: 200px;
+    width: 500px;
+
+}
+#playBtn{
+    color: rgb(240, 240, 132);
+    visibility: visible;
+    transform: translate(50%, 50%);
+}
+
+.green{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.red{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.yellow{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+}
+
+.blue{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    border: 10px solid black;
+    border-radius: 50px;
+    height: 200px;
+    width: 200px;
+}
+#textField{
+    display: none;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: minmax(10px,200px) minmax(10px,200px);
+    grid-template-rows: minmax(10px,200px) minmax(10px,200px);
+    transform: translate(-10%, -60%);
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+
+.game-over
+{
+    background-color: red;
+    opacity: 0.8;
+}
+
+.instructions{
+    color: rgb(240, 240, 132);
+    text-align: center;
+}
+
+@media screen and (max-width: 360px)
+{
+    .playBtnContainer
+    {
+        transform: translate(50%, 50%);
+        height: 200px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    
+    .playBtnContainer
+    {
+        transform: translate(50%, 50%);
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 500px;
+    }
+
+
+    #textField
+    {
+        display: none;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: minmax(10px,200px) minmax(10px,200px);
+        grid-template-rows: minmax(10px,200px) minmax(10px,200px);
+        justify-content: center;
+        align-items: center;
+        transform: translate(-70%, 5%);
+    }
+
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px)
+{
+    
+    .playBtnContainer{
+        transform: translate(80%, 50%);
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 500px;
+    }
+
+
+    #textField{
+        display: none;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: minmax(10px,200px) minmax(10px,200px);
+        grid-template-rows: minmax(10px,200px) minmax(10px,200px);
+        justify-content: center;
+        align-items: center;
+        transform: translate(-70%, 5%);
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px)
+{
+    .playBtnContainer{
+        transform: translate(50%, 50%);
+        display: flex;
+        align-items: center;
+        height: 200px;
+        width: 500px;
+    }
+
+
+    #textField{
+        display: none;
+        column-gap: 30px;
+        row-gap: 30px;
+        grid-template-columns: minmax(10px,200px) minmax(10px,200px);
+        grid-template-rows: minmax(10px,200px) minmax(10px,200px);
+        justify-content: center;
+        align-items: center;
+        transform: translate(40%, 10%);
+    }
+}
